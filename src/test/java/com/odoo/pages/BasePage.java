@@ -41,7 +41,7 @@ public class BasePage {
         WebDriverWait wait = new WebDriverWait(Driver.get(), 30);
         try {
             BrowserUtils.wait(1);
-            wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("div[class='loader-mask shown']")));
+            wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("div[class='o_loading']")));
             return true;
         } catch (NoSuchElementException e) {
             System.out.println("Loader mask not found!");

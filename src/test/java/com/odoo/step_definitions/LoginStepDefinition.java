@@ -18,14 +18,23 @@ public class LoginStepDefinition {
         Driver.get().get(ConfigurationReader.getProperty("url"));
     }
 
-    @Then("user logs in as posmanager")
-    public void user_logs_in_as_posmanager() {
+    @Then("user logs in as pos manager")
+    public void user_logs_in_as_pos_manager() {
 
-        System.out.println("Login as posmanager");
+        System.out.println("Login as pos manager");
         String userName = ConfigurationReader.getProperty("user_name");
         String password = ConfigurationReader.getProperty("password");
         loginpage.login(userName,password);
 
+    }
+
+    @Then("user logs in as event manager")
+    public void user_logs_in_as_event_manager() {
+
+        System.out.println("Login as event manager");
+        String userName = ConfigurationReader.getProperty("user_name2");
+        String password = ConfigurationReader.getProperty("password2");
+        loginpage.login(userName,password);
     }
 
     @Then("user verifies that {string} page subtitle is displayed")
