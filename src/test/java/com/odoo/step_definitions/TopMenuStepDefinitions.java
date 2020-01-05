@@ -15,7 +15,7 @@ public class TopMenuStepDefinitions {
     @Then("user navigates to {string}")
     public void user_navigates_to(String subModule) {
         loginPage.navigateTo(subModule);
-
+        // BrowserUtils.wait(3); //for demo
     }
 
     @Then("user verifies that error message")
