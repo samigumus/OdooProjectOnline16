@@ -10,5 +10,5 @@ Feature:Login
   @eventmanager
   Scenario: Login as event manager
     Given user is on the login page
-    Then user logs in as event manager
+    Then user logs in as event crm manager
     And user verifies that "#Inbox" page subtitle is displayed

@@ -21,9 +21,9 @@ public class CreateCustomersPage extends CRMPage {
     @FindBy(id = "o_field_input_232")
     public WebElement companyinput;
     /*
-    // Please skip adding Company name, it creates new company
-    // We dont need it when creating individual account
-         */
+     Please skip adding Company name, it creates new company
+     We dont need it when creating individual account
+    */
     @FindBy(css = "input[id='o_field_input_235']")
     public WebElement streetInput1;
     @FindBy(css = "input[id='o_field_input_236']")
@@ -32,9 +32,6 @@ public class CreateCustomersPage extends CRMPage {
     public WebElement cityInput;
     @FindBy(css = "input[id='o_field_input_238']")
     public WebElement stateInput;
-    public void stateInput(String state) {
-         stateInput.sendKeys(state, Keys.ENTER);
-    }
     @FindBy(css = "input[id='o_field_input_239']")
     public WebElement zipInput;
     @FindBy(css = "input[id='o_field_input_38']")
@@ -103,11 +100,9 @@ public class CreateCustomersPage extends CRMPage {
     public WebElement DISCARD;
 
 
-
-
-
-
-
+    public void stateInput(String state) {
+        stateInput.sendKeys(state, Keys.ENTER);
+    }
 
 
 

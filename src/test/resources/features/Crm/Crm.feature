@@ -6,7 +6,7 @@ Feature: Customer Relationship Management
 
   Background: open login page and logs in as events crm manager go to Events page
     Given user is on the login page
-    Then user logs in as event manager
+    Then user logs in as event crm manager
     And user navigates to "CRM"
     And user verifies that "Pipeline" page subtitle is displayed
 

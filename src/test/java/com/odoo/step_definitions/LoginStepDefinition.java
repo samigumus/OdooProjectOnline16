@@ -28,10 +28,10 @@ public class LoginStepDefinition {
 
     }
 
-    @Then("user logs in as event manager")
-    public void user_logs_in_as_event_manager() {
+    @Then("user logs in as event crm manager")
+    public void user_logs_in_as_event_crm_manager() {
 
-        System.out.println("Login as event manager");
+        System.out.println("Login as event crm manager");
         String userName = ConfigurationReader.getProperty("user_name2");
         String password = ConfigurationReader.getProperty("password2");
         loginpage.login(userName,password);

@@ -11,9 +11,9 @@ import java.util.List;
 
 public class CRMPage extends BasePage {
 
-//    public CRMPage() {
-//        PageFactory.initElements(Driver.get(),this);
-//    }
+    public CRMPage() {
+        PageFactory.initElements(Driver.get(), this);
+    }
 
     @FindBy(xpath = "//a[@data-menu='274']")
     public WebElement PipelineButton;
@@ -24,10 +24,6 @@ public class CRMPage extends BasePage {
 
     @FindBy(css = ".o_column_title")
     public List<WebElement> columnNames;
-
-    public CRMPage() {
-        PageFactory.initElements(Driver.get(), this);
-    }
 
     public List<String> getColumnNames(List<WebElement> columnNames) {
         List<String> columnList = new ArrayList<>();
