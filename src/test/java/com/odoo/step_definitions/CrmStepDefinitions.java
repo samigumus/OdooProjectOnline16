@@ -1,8 +1,10 @@
+
+
 package com.odoo.step_definitions;
 
 
 
-import com.odoo.pages.CrmPage;
+import com.odoo.pages.CRM.CRMPage;
 
 import com.odoo.utilities.BrowserUtils;
 
@@ -17,7 +19,7 @@ import java.util.List;
 public class CrmStepDefinitions {
 
 
-    CrmPage crm_page = new CrmPage();
+    CRMPage crm_page = new CRMPage();
 
 
 //    @Then("user navigates to {string} module")
@@ -40,6 +42,4 @@ public class CrmStepDefinitions {
     }
 
 }
-
-
 
