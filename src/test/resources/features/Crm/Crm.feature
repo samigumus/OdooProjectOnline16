@@ -17,7 +17,7 @@ Feature: Customer Relationship Management
       | Approved    |
       | Proposition |
       | Qualified   |
-      | Pending    |
+      | Pending     |
 
             #    Then user finds pipeline by the "test1"
             #    And user moves pipeline to "Proposition" column
