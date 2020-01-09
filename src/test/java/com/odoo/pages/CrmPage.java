@@ -1,7 +1,8 @@
-package com.odoo.pages.CRM;
+package com.odoo.pages;
 
-import com.odoo.pages.BasePage;
+import com.odoo.utilities.BrowserUtils;
 import com.odoo.utilities.Driver;
+import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -9,25 +10,16 @@ import org.openqa.selenium.support.PageFactory;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CRMPage extends BasePage {
+public class CrmPage extends BasePage{
 
-//    public CRMPage() {
-//        PageFactory.initElements(Driver.get(),this);
-//    }
-
-    @FindBy(xpath = "//a[@data-menu='274']")
-    public WebElement PipelineButton;
-    @FindBy(xpath = "//a[@data-menu='536']")
-    public WebElement QuotationsButton;
-    @FindBy(xpath = "//a[@data-menu='272']")
-    public WebElement CustomersButton;
 
     @FindBy(css = ".o_column_title")
     public List<WebElement> columnNames;
 
-    public CRMPage() {
+    public CrmPage() {
         PageFactory.initElements(Driver.get(), this);
     }
+
 
     public List<String> getColumnNames(List<WebElement> columnNames) {
         List<String> columnList = new ArrayList<>();
@@ -36,4 +28,6 @@ public class CRMPage extends BasePage {
         }
         return columnList;
     }
+
+
 }
