@@ -16,7 +16,5 @@ import org.junit.runner.RunWith;
 )
 public class CucumberRunner {
 
-        //Hacer added smt
-        // i am testing
 
 }
