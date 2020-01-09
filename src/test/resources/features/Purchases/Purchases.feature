@@ -1,0 +1,2 @@
+@purchases
+Feature: Purchases
