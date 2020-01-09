@@ -3,4 +3,4 @@ Feature: Create a new Customer
 
   Scenario: create a new customer account
     Given user logs in as pos manager
-    And
+    #And
