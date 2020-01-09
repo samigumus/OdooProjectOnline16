@@ -14,10 +14,10 @@ Feature: Customer Relationship Management
   Scenario: As a user I should be able to chance a status of pipeline
     And user verifies, that columns name columnNames are display
       | New         |
-      | Proposition |
       | Approved    |
+      | Proposition |
       | Qualified   |
       | Pending    |
 
-#    Then user finds pipeline by the "test1"
-#    And user moves pipeline to "Proposition" column
+            #    Then user finds pipeline by the "test1"
+            #    And user moves pipeline to "Proposition" column
