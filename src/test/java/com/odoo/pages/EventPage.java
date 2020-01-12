@@ -1,9 +1,15 @@
 package com.odoo.pages;
 
+import com.odoo.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class EventPage extends BasePage {
+
+    public EventPage() {
+        PageFactory.initElements(Driver.get(), this);
+    }
 
     @FindBy(css = "button[class='btn btn-primary btn-sm o-kanban-button-new btn-default']")
     public WebElement createEventBtn; // create new event from default page

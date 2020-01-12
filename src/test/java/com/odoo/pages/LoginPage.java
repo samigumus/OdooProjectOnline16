@@ -23,9 +23,9 @@ public class LoginPage extends BasePage{
     @FindBy(css = ".btn.btn-primary")
     public WebElement loginBtn;
 
-    public void login(String userName, String passwrd){
+    public void login(String userName, String Password){
         email.sendKeys(userName);
         //Keys.ENTER to replace login click
-        password.sendKeys(passwrd, Keys.ENTER);
+        password.sendKeys(Password, Keys.ENTER);
     }
 }

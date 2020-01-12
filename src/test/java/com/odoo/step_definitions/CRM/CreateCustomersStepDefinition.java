@@ -1,4 +1,4 @@
-package com.odoo.step_definitions;
+package com.odoo.step_definitions.CRM;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
